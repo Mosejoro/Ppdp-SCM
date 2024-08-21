@@ -1,0 +1,129 @@
+.M a {
+    font-size: 19px;
+}
+.left img{
+    width: 10rem;
+}
+.Right img{
+    margin-top: 20px;
+    width: 35rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+}
+.T{
+  font-size: 25px;
+}
+.A{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.D{
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+    padding: 20px;
+    width: 20rem;
+    height: 20rem;
+}
+article{
+    height: 100vh;
+}
+.carousel-item img{
+    width: 32rem;
+    height: 30rem;
+}
+footer div:nth-child(1){
+    width: 25%;
+
+}
+/* Gallery */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    height: 90vh; /* Adjust the height as needed */
+  }
+
+  .slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .slider-item.active {
+    opacity: 1;
+  }
+
+  .slider-caption {
+    position: absolute;
+    bottom: 0px;
+    left: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+  .slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .slider-nav-button {
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .slider-nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);}
+/* Gallery */
+@media screen and (max-width:878px) {
+    footer{
+        padding: 0;
+    }
+    footer div:nth-child(1){
+        width: 100%;
+    
+    }
+    .slider-caption {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+      }
+      .slider-nav {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        display: none;
+      }
+    .slider-item{
+        background-size:cover;
+    }
+
+}
